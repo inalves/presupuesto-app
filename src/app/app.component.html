@@ -1,0 +1,10 @@
+<div class="cabecero">
+  <app-summary [totalIncome]="totalIncome" [totalOutcome]="totalOutcome"></app-summary>
+</div>
+
+<app-form (incomeCreated)="onIncomeAdd($event)"></app-form>
+
+<div class="contenedor limpiarEstilos">
+  <app-income></app-income>
+  <app-outcome></app-outcome>
+</div>
